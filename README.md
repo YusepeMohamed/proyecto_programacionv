@@ -65,10 +65,8 @@ pytz==2025.2
 python -m venv venv
 
 # Activar entorno virtual
-# En Windows:
 venv\Scripts\activate
-# En macOS/Linux:
-source venv/bin/activate
+
 ```
 
 ### 3. Instalación de Dependencias
@@ -88,7 +86,7 @@ pip install pillow==11.3.0
 ### 4. Configuración de Base de Datos
 ```bash
 # Crear base de datos en PostgreSQL
-createdb libros_db
+createdb db_final_progra
 
 # Configurar settings.py con tus credenciales de PostgreSQL
 ```
@@ -123,7 +121,7 @@ El proyecto está organizado en **3 aplicaciones principales**:
 ###  Apps del Proyecto
 ```
 libros_site/
-├── libros/          # Gestión de libros, autores, géneros
+├── libros/          # Gestión de libros, autores, géneros, puntuacion
 ├── usuarios/        # Autenticación y gestión de usuarios
 ├── graficos/        # Generación de gráficos estadísticos
 └── libros_site/     # Configuración principal
@@ -371,26 +369,31 @@ El sistema genera **5 tipos de gráficos estadísticos**:
 - **Endpoint:** `/graficos/libros-por-genero/`
 - **Descripción:** Gráfico horizontal que muestra cuántos libros hay por cada género
 - **Tipo:** Barras horizontales
+![Image](https://github.com/user-attachments/assets/8da83dd0-448c-4d7f-8a2a-cd1d1c7876a1)
 
 ### 2. **Promedio de Puntuaciones por Libro**
 - **Endpoint:** `/graficos/promedio-puntuacion-libros/`
 - **Descripción:** Muestra el promedio de puntuaciones que ha recibido cada libro
 - **Tipo:** Barras verticales
+![Image](https://github.com/user-attachments/assets/9399038e-e29d-4116-b81d-c253283f508e)
 
 ### 3. **Promedio de Puntuaciones por Autor**
 - **Endpoint:** `/graficos/promedio-puntuacion-autores/`
 - **Descripción:** Calcula el promedio de puntuaciones de todos los libros por autor
 - **Tipo:** Barras verticales
+![Image](https://github.com/user-attachments/assets/7286449c-d7be-4229-8a50-69f3cbb32cdf)
 
 ### 4. **Libros por Nacionalidad del Autor**
 - **Endpoint:** `/graficos/libros-por-nacionalidad/`
 - **Descripción:** Distribución de libros según la nacionalidad de sus autores
 - **Tipo:** Barras horizontales
+![Image](https://github.com/user-attachments/assets/3a99392b-f372-4282-b515-9c7070e6c4c0)
 
 ### 5. **Libros Creados por Usuario**
 - **Endpoint:** `/graficos/libros-por-usuario/`
 - **Descripción:** Cantidad de libros que ha creado cada usuario
 - **Tipo:** Barras horizontales
+![Image](https://github.com/user-attachments/assets/bc264a09-a04e-45f0-8a75-a47d30206f34)
 
 ### **Tecnologías Utilizadas para Gráficos**
 - **Matplotlib 3.10.3:** Generación de gráficos
