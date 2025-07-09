@@ -1,0 +1,25 @@
+# Entorno virtual (si usás venv local)
+venv/
+env/
+*.pyc
+__pycache__/
+
+# Archivos temporales de VSCode
+.vscode/
+
+# Archivos de configuración de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos subidos por usuarios
+media/
+
+# Archivos de migración (opcional si querés ignorar todas menos la inicial)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+
+# Archivos de configuración sensibles
+*.env
+.env
+
+
