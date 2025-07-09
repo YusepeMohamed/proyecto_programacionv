@@ -1,4 +1,4 @@
-#  API de Gestión de Libros - libros_site
+#  API de Gestión de Libros - Jose Gabriel Espinola Nuñez
 
 ![Python](https://img.shields.io/badge/python-3.11.9-blue.svg)
 ![Django](https://img.shields.io/badge/django-5.2.3-green.svg)
@@ -485,7 +485,8 @@ Este proyecto está distribuido bajo la **MIT License**.
 
 ##  Información del Desarrollador
 
-- **Proyecto:** Trabajo Final 
+- **Proyecto:** Trabajo Final
+- **Alumno:** Jose Gabriel Espinola Nuñez 
 - **Materia:** Programación 5
 - **Tecnologías:** Python, Django, PostgreSQL, REST API
 - **Año:** 2025
@@ -512,4 +513,4 @@ Para cualquier duda o problema, puedes:
 
 ---
 
-**¡Gracias por usar nuestra API de Gestión de Libros!** 
+ 
